@@ -1,0 +1,17 @@
+{
+  "name": "solana-encryption",
+  "version": "1.0.0",
+  "description": "",
+  "main": "encryptDecrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.76.0",
+    "bs58": "^5.0.0",
+    "tweetnacl": "^1.0.3"
+  }
+}
