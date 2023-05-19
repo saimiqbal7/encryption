@@ -1,12 +1,19 @@
 const nacl = require('tweetnacl');
-const encoder = require('./adapters/encoder.js');
-const decoder = require('./adapters/decoder.js');
+const encode = require('../adapters/encoder')
 
-
-const sign = (message, privateKey) => {
-
-    const messageUint8 = encoder.encode(message);
-    const signed = nacl.sign(messageUint8, privateKey);
-    return signed;
-
+function sign(message, secretKey) {
+    
+    const encodedMessage = encode(message);
+    const signature = nacl.sign.detached(encodedMessage, secretKey);
+    return signature;
 }
+
+function verify(message, signature, publicKey) {
+
+    const encodedMessage = encode(message);
+    const verified = nacl.sign.detached.verify(encodedMessage, signature, publicKey)
+    return verified;
+}
+
+
+module.exports = {sign, verify};
