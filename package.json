@@ -1,0 +1,19 @@
+{
+  "name": "solana-ethereum-encryption",
+  "version": "1.0.0",
+  "description": "Encrypt and decrypt messages using solana or ethereum keys ",
+  "main": "./solana-encryption/tests/encryptDecrypt.js",
+  "scripts": {
+    "test": "node encryptDecrypt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimiqbal7/encryption.git"
+  },
+  "author": "Saim Koii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saimiqbal7/encryption/issues"
+  },
+  "homepage": "https://github.com/saimiqbal7/encryption#readme"
+}
