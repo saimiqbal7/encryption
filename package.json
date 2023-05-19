@@ -6,6 +6,12 @@
   "scripts": {
     "test": "node encryptDecrypt.js"
   },
+    "dependencies": {
+    "@solana/web3.js": "^1.76.0",
+    "bs58": "^5.0.0",
+    "nacl-signature": "^2.0.3",
+    "tweetnacl": "^1.0.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saimiqbal7/encryption.git"
