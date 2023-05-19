@@ -4,11 +4,12 @@
   "description": "Encrypt and decrypt messages using solana or ethereum keys ",
   "main": "./solana-encryption/tests/encryptDecrypt.js",
   "scripts": {
-    "test": "node encryptDecrypt.js"
+    "test": "node tests/encryptDecrypt.js"
   },
-    "dependencies": {
+  "dependencies": {
     "@solana/web3.js": "^1.76.0",
     "bs58": "^5.0.0",
+    "ed2curve": "^0.3.0",
     "nacl-signature": "^2.0.3",
     "tweetnacl": "^1.0.3"
   },

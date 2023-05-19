@@ -1,9 +1,8 @@
 const nacl = require("tweetnacl");
-const { sign, verify } = require("../signVerify");
+const { sign, verify } = require("../solana-encryption/signVerify");
 
 const message = "Hello Saim";
 console.log("Message:", message);
-
 
 const keypair = nacl.sign.keyPair();
 const publicKey = keypair.publicKey;
